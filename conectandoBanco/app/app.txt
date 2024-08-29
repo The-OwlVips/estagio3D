@@ -1,0 +1,3 @@
+#Para que serve a pasta app
+
+são arquivos que tem a logica do projeto 

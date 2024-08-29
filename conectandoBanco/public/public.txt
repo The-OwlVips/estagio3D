@@ -1,0 +1,3 @@
+#Para que serve a pasta Public?
+
+São pastas e arquivos de visualização do Usuario
