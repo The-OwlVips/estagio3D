@@ -5,12 +5,18 @@ include __DIR__."../app/model/Aluno.php";
 
 //__DIR__  == Vai servir para indicar um endereço completo da pasta que vc esta
 
-$alunosBanco = $banco->query("SELECT * FROM Aluno");
-$alunoBanco = alunoBanco->fetchAll();
+$consulta = $banco->query("SELECT * FROM Aluno");
 
-$aluno = new Aluno();
+$alunos = $consulta->fetchAll(PDO::FETCH_ASSOC);
+$contador = 0;
 
-$objAluno->setNome($alunoBanco[0]['nome']);
-$objAluno->setMatricula($alunoBanco[0]['matricula']);
+foreach($alunos as $aluno){
 
+    $objAluno[] = new aluno();
+    $objAluno[$contador]-> setMatricula($aluno["matricula"]);
+    $objAluno[$contador]-> setNome($aluno["nome"]);
+    $objAluno[$contador]->getNome();
+
+    //echo $alunosBanco["matricula"]."|".$alunosBanco["nome"]."|"."<br>";
+}
 ?>
