@@ -1,0 +1,13 @@
+A função __construct é iniciada assim que você inicia o obj
+
+public function __construct(tipoVar $var, tipoVar $var, tipoVar $var) {
+    
+    $this->setNome($nome);
+    $this->setPreco($preco);
+    $this->setCod($cod);
+    
+}
+
+obj = new obj("nome","preco","cod");
+
+:D
